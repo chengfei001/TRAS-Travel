@@ -1,12 +1,12 @@
-# TARS Travel · 塔斯旅行助手
+# TARS Travel · 旅语翻译
 
-Official support and privacy information for **TARS Travel（塔斯旅行助手）**.
+Official support and privacy information for **TARS Travel（旅语翻译）**.
 
-TARS Travel is a travel communication assistant for Chinese travelers. The first release supports Simplified Chinese, English, and Bahasa Melayu.
+TARS Travel is a travel communication app for Chinese travelers. The current release supports Simplified Chinese, English, and Bahasa Melayu, with online translation and an optional downloadable model for offline text translation.
 
-> **The current version is completely free. It contains no advertising, subscriptions, or in-app purchases.**
+> **The current version is free, with no ads, subscriptions, or in-app purchases.**
 >
-> **当前版本完全免费，无广告、无订阅、无应用内购买。**
+> **当前版本免费，无广告、无订阅、无应用内购买。**
 
 ## Support
 
@@ -22,4 +22,4 @@ TARS Travel is a travel communication assistant for Chinese travelers. The first
 
 Email: chengfei001@gmail.com
 
-Last updated: July 18, 2026
+Last updated: July 26, 2026
