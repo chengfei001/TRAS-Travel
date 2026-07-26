@@ -1,71 +1,48 @@
 # TARS Travel Support
 
-Thank you for using TARS Travel, a travel communication assistant for Chinese outbound travelers. The first release supports Simplified Chinese, English, and Bahasa Melayu.
+TARS Travel is designed for communication during international travel. It currently supports Simplified Chinese, English, and Bahasa Melayu.
 
-## Completely Free
+## Current Release
 
-**The current version of TARS Travel is completely free.**
-
-- No advertising
-- No subscriptions
-- No in-app purchases
-- No paid feature unlocks
+The current release is free, with no ads, subscriptions, in-app purchases, or paid unlocks.
 
 ## Frequently Asked Questions
 
-### Which languages are supported?
+### Can I translate without internet?
 
-TARS Travel currently supports Simplified Chinese, English, and Bahasa Melayu, with an initial focus on communication for Chinese travelers in Malaysia.
+Yes, for text translation after you download the local model (about 1.28 GB) while online. Before a flight, before obtaining a local SIM, or before visiting a remote area, complete the download and run the local-model test once.
 
-### Can I use TARS Travel offline?
+### Is voice input always offline?
 
-Yes. After downloading the offline translation and speech models, core translation, speech-to-text, and speech playback features can work without an internet connection. An internet connection and sufficient device storage are required for the initial model downloads.
+No. Voice input uses Apple Speech and requests on-device recognition first. Fully offline recognition depends on the iPhone, iOS version, language, and installed Apple speech resources. Apple may process speech online when necessary. This release does not include a downloadable offline speech-recognition model.
 
 ### What is the difference between online and offline translation?
 
-- Online translation requires an internet connection and sends the text you choose to translate to the configured online translation service.
-- Offline translation is processed on your device and does not send the text to the internet.
-- Automatic mode can use an available online service first and fall back to offline capabilities when the network or online service is unavailable.
+- Online translation sends the text to the compatible provider you configure.
+- Offline translation processes text on your device and does not send it to an online translation service.
+- Automatic mode can try the installed local model when the online service is unavailable.
 
-### Why does the app request microphone access?
+### Why download a model?
 
-The app requests microphone access only when you choose to use voice input. Audio recording and Whisper speech recognition are processed on your device. Temporary audio files are deleted after recognition finishes, is cancelled, or fails, and are not uploaded to the online translation service.
+The model enables text translation without internet. The App tries ModelScope first and Hugging Face as a fallback, then verifies the file before installation. You can pause, resume, remove, or download it again in Settings.
 
-You can review or revoke microphone access in iPhone Settings.
+### What if online translation is unavailable?
 
-### Why do I need to download models?
+Check your connection, API Base URL, Model Name, and API key. The App does not include a production API key. If the local model is installed, switch to Always Offline.
 
-Offline translation and offline speech recognition require local model files. After download, the models are stored in the app's local storage. You can delete and download them again from the app's settings.
+### What if voice input returns no result?
 
-### What should I do if online translation is unavailable?
-
-Check your network connection and the online translation configuration in the app. You can switch to offline mode if the offline translation model has already been downloaded.
-
-### What should I do if voice input returns no result?
-
-Confirm that microphone permission is enabled and speak clearly near the phone. Background noise, low volume, and an incorrect language selection may reduce recognition accuracy.
+Confirm microphone and speech-recognition permissions, select the correct language, and speak clearly near the phone. Noise, low volume, or missing system language resources can affect recognition.
 
 ### Can I rely on a translation for an emergency, medical, or legal decision?
 
-Machine translation can contain errors. For emergencies or matters involving health, allergies, law, finance, or personal safety, confirm the meaning with local professionals or another trusted person and do not rely solely on the app.
+Machine translation can be wrong. For emergencies or matters involving health, allergies, law, finance, or personal safety, confirm the meaning with a local professional or trusted person.
 
 ## Contact Support
 
-For questions, feedback, or feature requests, email:
+Email: **chengfei001@gmail.com**
 
-**chengfei001@gmail.com**
+Include the iPhone model, iOS and App versions, online or offline mode, reproduction steps, and error text. Do not send API keys, passwords, or other sensitive information.
 
-When reporting a problem, it is helpful to include:
-
-- Your iPhone model and iOS version
-- Your TARS Travel version
-- Whether you were using online or offline mode
-- The steps that caused the issue and any error message
-
-Do not send API keys, passwords, or other sensitive information by email.
-
-## Privacy Policy
-
-Read the [TARS Travel Privacy Policy](privacy-policy.en.md).
-
-Last updated: July 18, 2026
+Privacy policy: [TARS Travel Privacy Policy](privacy-policy.en.md)  
+Last updated: July 26, 2026
